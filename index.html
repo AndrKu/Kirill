@@ -1,15 +1,370 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Мегуми</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <h1>Hello</h1>
-    <address>California</address>
-    <p>Gorenie</p>
-    
+	<div class="wrapper">
+	<header class="header">
+		
+		<nav>
+			
+			<div class="nav_wrap">
+
+      <ul class="nav_menu">
+          <li><a href="#">О нас</a></li>
+			 <li><a href="#">Как заказать товар</a></li>
+			 <li><a href="#">Условия доставки</a></li>
+			 <li><a href="#">Акции</a></li>
+			 <li><a href="#">Контакты</a></li>
+       </ul>
+		 <div class="round"></div>
+		 <div class="nav_clock">График работы: 09.00 - 22.00  Заказы принимаются до 19.00
+        </div>
+		  <div class="round"></div>
+		  <div class="nav_call">
+			  Бесплатный звонок<br ><img src="/img/phone-call.png" width="15" height="15" alt="call"><span>8 800 2000 567</span><button class="btn_poly"><img src="/img/Polygon 2 copy 3.png" width="11" height="8" alt="poly"></button>
+		  </div>
+		 
+		
+		<div class="icon_cart_home"><img src="/img/icon_home50.png" alt="icon-home"></div>
+		<div class="burg"></div>
+		<div class="tel_mobi">
+			<p class="text-1">8 800 2000 984</p>
+			<p class="text-2">бесплатный звонок</p>
+		 </div>
+		<div class="icon_cart">
+			<a href="#"><img src="/img/icon_auth50.png" alt="auth"></a>
+			<a href="#"><img src="/img/icon_cart50.png" alt="cart"></a>
+        </div>
+		     </div>
+
+		</nav>
+		<div class="search_wrap">
+					
+		<div class="logo"><img src="/img/logo.png"></div>
+
+			<div class="logo_text"><p>Косметика и товары мира</p></div>
+			
+			<div class="search-box">
+				<form action="#">
+				  <input type="text" placeholder="Поиск.." name="search">
+				  <button class="search_button" type="submit"><img src="/img/search.png"></button>
+				</form>
+			</div>
+			
+			<div class="icon_header">
+				<div class="img_icon"><a href="#"><img src="/img/action.png" alt="action-icon"><span class="text_action">АКЦИИ</span></a></div>
+				<div class="img_icon"><a href="#"><img src="/img/icon_new_75.jpg" alt="new-icon"><span class="text_new">НОВИНКИ</span></a></div>
+
+			</div>
+		</div>
+		
+		<div class="top_menu">
+			<div class="menu_brand">
+				<div class="wrap_checkselect">
+				<a class="check_title" href="#">Страны</a>
+				<div class="checkselect">
+					<label><input type="checkbox" name="brands[]" value="1"> СССР</label>
+					<label><input type="checkbox" name="brands[]" value="2"> РОССИЯ</label>
+					<label><input type="checkbox" name="brands[]" value="3"> МАКИНТОШИЯ</label>
+					<label><input type="checkbox" name="brands[]" value="4"> БЕЛАРУСЬ</label>
+					<label><input type="checkbox" name="brands[]" value="5"> США</label>
+					<label><input type="checkbox" name="brands[]" value="6"> КАНАДА</label>
+				</div>
+			</div>
+			<div class="wrap_checkselect">
+			<a class="check_title" href="#">Бренды</a>
+				<div class="checkselect">
+					<label><input type="checkbox" name="brands[]" value="1"> Goo</label>
+					<label><input type="checkbox" name="brands[]" value="2"> Apple</label>
+					<label><input type="checkbox" name="brands[]" value="3"> Microsoft</label>
+					<label><input type="checkbox" name="brands[]" value="4"> Facebook</label>
+					<label><input type="checkbox" name="brands[]" value="5"> Amazon</label>
+					<label id="select option"><input type="checkbox" name="brands[]" value="6"> Verizon</label>
+					<div class="col-sm text-center">
+						<button id="js-button" class="btn btn-outline-primary">Получить текст</button>
+					</div>
+					<div class="rezultat" id="js-result">
+						Результат: 
+					</div>
+				</div>
+			</div>
+
+				</div>
+				<div class="menu">
+                <ul>
+						 <li><a href="#">Косметика</a></li>
+						 <li><a href="#">Бытовая химия</a></li>
+						 <li><a href="#">Гигиена</a></li>
+						 <li><a href="#">Здоровье</a></li>
+						 <li><a href="#">Для дома</a></li>
+						 <li><a href="#">Зонты</a></li>
+						 <li><a href="#">Детям</a></li>
+						 
+
+					 </ul>
+
+				</div>
+				<!-- <span class="target"></span> -->
+			</div>
+			
+			
+	
+	</header>
+	<main>
+		<div class="content">
+        <!-- <div class="slider">
+			<span class="prokrut">
+				<div class="ellips"></div>
+				<div class="ellips"></div>
+				<div class="ellips"></div>
+				<div class="ellips"></div>
+				<div class="ellips"></div>
+			 </span>
+           <img src="/img/banner.png" >
+			  </div>slider -->
+
+			  <!-- catalog_category -->
+
+
+			  <div class="grid_category">
+
+				<div class="box-1"> L </div>
+				<div class="box-2"> B </div>
+				<div class="box-3"> C </div>
+				<div class="box-4"> D </div>
+				<div class="box-5"> E </div>
+				<div class="box-6"> F </div>
+				<div class="box-7"> R </div>
+				<div class="box-8"> R </div>
+				
+				<div class="box-1"><a href="#">
+					<p class="boxop"  >Косметика</p>
+					<img src="/img/banner_cocmetic.jpg">
+					 </a></div>
+				<div class="box-2"><a href="#">
+					<p class="boxop">Бытовая химия</p>
+				 <img src="/img/banner_himia.jpg">
+					 </a></div>
+				<div class="box-3"><a href="#">
+					 <p class="boxop">Гигиена</p>
+					 <img src="/img/banner_gigiena.jpg">
+				 </a></div>
+				 <div class="box-4"><a href="#">
+					 <p class="boxop">Здоровье</p>
+					 <img src="/img/banner_zdorov.jpg">
+				 </a></div>
+				 <div class="box-5"><a href="#">
+					 <p class="boxop">Для дома</p>
+					 <img src="/img/banner_dom.jpg">
+				 </a></div>
+				 <div class="box-6"><a href="#">
+					 <p class="boxop">Зонты</p>
+					 <img src="/img/banner_zont.jpg">
+				 </a></div>
+				 <div class="box-7"><a href="#">
+					 <p class="boxop">Детям</p>
+					 <img src="/img/banner_kids.jpg">
+				 </a></div> 
+				 <div class="box-8"><a href="#">
+					<p class="boxop">Детям</p>
+					<img src="/img/banner_kids_full.jpg">
+				</a></div> 
+
+		 </div> <!--Catalog category-->
+
+
+
+		<div class="new_items_box">
+			<div class="cart_wrap">
+	          <div class="img_cart"><img src="/img/test_tovar (1).jpg"></div>
+			  <div class="cart_title">IKEMOTO Щетка массажная для очищения кожи головы с ионами</div>
+			  <div class="buy_more">
+				  <div class="price_more">
+					  <div class="price_general">
+						  <span>1000 руб.</span>777 руб.</div>
+					  <button class="btn_buy">Купить<img src="/img/icon_buy.png"></button>
+				  </div>
+			  </div>
+			</div>
+	   
+		</div>   
+		  </div>  <!-- content -->
+		  
+      
+		
+	<div class="new_product">
+      <!-- Card -->
+	   
+		
+	</div>	
+    </main>
+	<footer>
+		<div class="newsteller_box">
+			<div class="footer_box">
+				<div class="aero_img">
+					<img src="/img/plane.png" width="227" height="96" alt="plane">
+				</div>
+			<div class="newsteller_title">
+		      <span class="newsteller_title_top">Подписывайтесь на нашу рассылку</span>
+			  <p class="newsteller_title_bottom">Участвуйте в акциях, скидках, распродажах!</p>
+			</div>
+			<form action="" method="POST">
+				<input class="inp" type="text" value="Введите Ваш E-mail">
+				<br />
+				<input class="inp_submit" type="submit" value="Подписаться!">
+			</form>
+			</div>
+		</div>
+		<div class="menu_box">
+			<div class="menu_box1">
+				<ul>
+					<li>О НАС</li>
+					<li>КАК ЗАКАЗАТЬ ТОВАР</li>
+					<li>Условия доставки</li>
+					<li>АКЦИИ</li>
+				</ul>
+			</div>
+			<div class="menu_box2">
+				<ul>
+					<li>Оптовым покупателям</li>
+					<li>Адреса магазинов</li>
+					<li>Отзывы</li>
+					<li>Вопросы-ответы</li>
+					<li>Контакты</li>
+				</ul>
+			</div>
+			<div class="menu_box3">
+				<p>Бесплатный звонок по России:
+					<span>8 800 2000 984</span></p>
+					<a href="#"><img src="/img/icon_call_footer.png" width="25" height="25" alt="call">&emsp;заказать обратный звонок</a>
+			<p>E-mail:<a href="mailto:mail@htmlacademy.ru"> tokyomag@mail.ru</a></p>
+			</div>
+			<div class="menu_box4">
+				<a href="#"><img src="/img/icon_instagram.png" width="45" height="45" alt="insta"></a>
+				<a href="#"><img src="/img/icon_fb.png" width="45" height="45" alt="fb"></a>
+				<a href="#"><img src="/img/icon_vk.png" width="45" height="45" alt="vk"></a>
+				<a href="#"><img src="/img/icon_odn.png" width="45" height="45" alt="odn"></a>
+			</div>
+		</div>
+		
+
+	</footer>
+	</div>
+	<script>
+		(function($) {
+function setChecked(target) {
+	var checked = $(target).find("input[type='checkbox']:checked").length;
+	if (checked) {
+		$(target).find('select option');
+	} else {
+		$(target).find('select option'); //:first
+	}
+}
+
+$.fn.checkselect = function() {
+	this.wrapInner('<div class="checkselect-popup"></div>');
+	this.prepend(
+		'<div class="checkselect-control">' +
+			'<select class="form-control"><option></option></select>' +
+			'<div class="checkselect-over"></div>' +
+		'</div>'
+	);	
+
+	this.each(function(){
+		setChecked(this);
+	});		
+	this.find('input[type="checkbox"]').click(function(){
+		setChecked($(this).parents('.checkselect'));
+	});
+
+	this.parent().find('.checkselect-control').on('click', function(){
+		$popup = $(this).next();
+		$('.checkselect-popup').not($popup).css('display', 'none');
+		if ($popup.is(':hidden')) {
+			$popup.css('display', 'block');
+			$(this).find('select').focus();
+		} else {
+			$popup.css('display', 'none');
+		}
+	});
+
+	$('html, body').on('click', function(e){
+		if ($(e.target).closest('.checkselect').length == 0){
+			$('.checkselect-popup').css('display', 'none');
+		}
+	});
+};
+})(jQuery);	
+
+$('.checkselect').checkselect();
+    //Plavnoe menu
+// (function() {
+
+// const target = document.querySelector(".target");
+// const links = document.querySelectorAll(".menu a");
+// const colors = ["deepskyblue", "orange", "firebrick", "gold", "magenta", "black", "darkblue"];
+
+// function mouseenterFunc() {
+// if (!this.parentNode.classList.contains("active")) {
+//  for (let i = 0; i < links.length; i++) {
+// 	if (links[i].parentNode.classList.contains("active")) {
+// 	  links[i].parentNode.classList.remove("active");
+// 	}
+// 	links[i].style.opacity = "0.25";
+//  }
+
+//  this.parentNode.classList.add("active");
+//  this.style.opacity = "1";
+
+//  const width = this.getBoundingClientRect().width;
+//  const height = this.getBoundingClientRect().height;
+//  const left = this.getBoundingClientRect().left + window.pageXOffset;
+//  const top = this.getBoundingClientRect().top + window.pageYOffset;
+//  const color = colors[Math.floor(Math.random() * colors.length)];
+
+//  target.style.width = `${width}px`;
+//  target.style.height = `${height}px`;
+//  target.style.left = `${left}px`;
+//  target.style.top = `${top}px`;
+//  target.style.borderColor = color;
+//  target.style.transform = "none";
+// }
+// }
+
+// for (let i = 0; i < links.length; i++) {
+// links[i].addEventListener("click", (e) => e.preventDefault());
+// links[i].addEventListener("mouseenter", mouseenterFunc);
+// }
+
+// function resizeFunc() {
+// const active = document.querySelector(".menu li.active");
+
+// if (active) {
+//  const left = active.getBoundingClientRect().left + window.pageXOffset;
+//  const top = active.getBoundingClientRect().top + window.pageYOffset;
+
+//  target.style.left = `${left}px`;
+//  target.style.top = `${top}px`;
+// }
+// }
+
+// window.addEventListener("resize", resizeFunc);
+
+// })();
+</script>
 </body>
 </html>

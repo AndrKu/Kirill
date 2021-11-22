@@ -1,0 +1,170 @@
+@media (max-width: 1080px) {
+
+.nav_wrap {
+	  justify-content: space-evenly;
+}	
+
+.search_wrap {
+		max-width: 1080px;
+		height: 350px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row wrap;
+		align-items: center;
+		
+  }
+
+.search-box {
+		max-width: 1080px;
+		width: 100%;
+		height: 138px;
+		border: none;
+		order: 2;
+		display: flex;
+     justify-content: center;
+     align-items: flex-end;
+	  background-image: linear-gradient(90.0deg, #d3436f 0%, #d3436f 100%);
+	  border-radius: 0;
+  }
+.search-box form {
+	flex-direction: row-reverse;
+} 
+
+.logo {
+	max-width: 518px;
+   height: 147px;
+	padding-left: 22px;
+	order: -1;
+}
+  .logo_text {
+	   display: none;
+}
+
+.icon_header {
+	max-width: 500px;
+	width: 100%;
+	height: 120px;
+	padding-right: 22px;
+	justify-content: space-around;
+	 order: 1; 
+}
+.icon_header .img_icon img {
+      width: 75px;
+		height: 75px;
+}
+
+.text_new {
+	font-family: Play;
+	font-size: 36px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #4b53fb;
+}
+
+.text_action {
+	font-family: Play;
+	font-size: 36px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #d3436f;
+}
+nav {
+	max-width: 1080px;
+	height: 140px;
+	background-color: gainsboro;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	color: #000000;
+
+}
+.nav_menu {
+	display: none;
+}
+.nav_clock {
+    display: none;
+
+}
+
+.nav_call {
+    display: none;
+
+}
+
+.icon_cart {
+     width: 200px;
+	  display: flex;
+	justify-content: space-between;
+
+}
+.round {
+	display: none;
+
+}
+
+.icon_cart_home {
+	display: block;
+}
+.burg {
+	width: 50px;
+	height: 140px;
+	background-image: url(/img/burg_cat.png);
+	background-position: center;
+    background-repeat: no-repeat;
+}
+.tel_mobi {
+	width: 400px;
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+   flex-direction: column;
+   align-items: center;
+   flex-wrap: wrap;
+	margin-top: 22px;
+}
+.tel_mobi .text-1 {
+	font-family: Play;
+	font-size: 45.7px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #000000;
+}
+
+.tel_mobi .text-2 {
+	font-family: 'Open Sans';
+	font-size: 24px;
+	line-height: 22px;
+	font-weight: 300;
+	color: #000000;
+}
+.top_menu {
+	display: none;
+}
+
+.grid_category {
+	max-width: 1050px;
+    height: 1050px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: 340px 340px 340px;
+	grid-template-areas:
+    "L L B"
+	"C D E"
+    "F R R";
+	gap: 10px;
+  margin: 0 auto;
+}
+
+.box-7 {
+	 display: none;
+  }
+
+.box-8 {
+	display: grid;
+	
+}
+
+
+}
+

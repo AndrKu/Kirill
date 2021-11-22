@@ -1,0 +1,281 @@
+.content {
+  max-width: 1440px;
+  height: auto;
+  margin: 8px auto 0px auto;
+}
+
+.slider {
+  width: 100%;
+  height: 420px;
+  position: relative;
+}
+.prokrut {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  height: 10px;
+  position: absolute;
+  top: 90%;
+  left: 45%;
+}
+
+.ellips {
+  width: 10px;
+  border-radius: 50%;
+  opacity: 0.16;
+  background-color: #323232;
+}
+
+/* grid_category */
+
+[class^="box-"] {
+	display: grid;
+  align-items: flex-end;
+ }
+
+.grid_category {
+  max-width: 1440px;
+  height: 716px;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: 355px 355px;
+	grid-template-areas:
+    "L L B C"
+    "D E F R";
+  margin: 0 auto;
+}
+
+.box-1 {
+  position: relative;
+	grid-area: L;
+	
+ }
+ .box-2 {
+   position: relative;
+	grid-area: B;
+ }
+ .box-3 {
+   position: relative;
+	grid-area: C;
+ }
+
+ .box-4 {
+   position: relative;
+	 grid-area: D;
+ }
+
+ .box-5 {
+   position: relative;
+	 grid-area: E;
+ }
+
+ .box-6 {
+   position: relative;
+	 grid-area: F;
+ }
+
+ .box-7 {
+   position: relative;
+	 grid-area: R;
+ }
+
+ .box-8 {
+  position: relative;
+  grid-area: R;
+   display: none;
+ }
+
+/*.item_one {
+  position: relative;
+  /* max-width: 716px;*/
+  /* width: 100%; 
+  flex-basis: 50%;
+  height: 355px;
+  background-color: #e7d8c7;
+  box-shadow: 0px 0px 18px 0px rgba(57, 69, 89, 0.28);
+} */
+
+
+/*.item_zero {
+  position: relative;
+  /* max-width: 355px; */
+  /* width: 100%; */
+  /* border-radius: 10px; */
+  /* box-sizing: content-box; */
+  /* background-color: #e7d8c7;
+  box-shadow: 0px 0px 18px 0px rgba(57, 69, 89, 0.28);
+}  */
+
+/* .category_item_seven img {
+   height: 100%;
+   object-fit: cover;
+   padding: 5px;
+   background-color: white;
+} */
+p.boxop {
+  position: absolute;
+  display: block;
+  font-family: Play;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000000;
+  left: 0;
+  bottom: 7%;
+  right: 0;
+  text-align: center;
+} 
+
+ .category_item a {
+  text-decoration: none;
+} 
+
+/* .category_item img {
+	max-width: 300px;
+	display: block;
+	margin: auto;
+	margin-top: 11%;
+	max-height: 220px;
+	box-sizing: content-box;
+} */
+/* @media (max-width: 1440px) {
+	.item_one {
+	  flex: 1 1 25%;
+	}
+  .item_one img {
+    height: 100%;
+    object-fit: cover;
+  }
+ } */
+
+ /* @media (max-width: 1440px) {
+	.category_item_seven {
+	  flex-basis: 50%;
+    max-width: none;
+	} */
+  /* .category_item_seven img {
+    height: 100%;
+    object-fit: cover;
+  } */
+/*@media (max-width: 1440px) {
+ .catalog_category {
+   width: 1050px;
+   height: 1050px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .item_one {
+ position: relative;
+ flex: initial;
+ width: 695px;
+ height: 340px;
+ background-color: #e7d8c7;
+ box-shadow: 0px 0px 18px 0px rgba(57, 69, 89, 0.28);
+
+}
+.item_zero {
+  position: relative;
+  flex: initial;
+  width: 340px;
+  height: 340px;
+  background-color: #e7d8c7;
+  box-shadow: 0px 0px 18px 0px rgba(57, 69, 89, 0.28);
+}
+
+
+} */
+/* catalog_category */
+
+/* Card */
+
+.cart_wrap {
+  width: 278px;
+  height: 400px;
+  border: 1px solid #c6c6c6;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.cart_wrap:before {
+  content: "";
+  width: 100%;
+  height: 30px;
+  opacity: 1;
+  background-color: rgb(73, 72, 64);
+  position: absolute;
+  transition: 0.5ms;
+  transform: scale(0);
+}
+
+.cart_wrap:hover:before {
+  transform: scale(1);
+}
+
+/* .cart_wrap:hover {
+	height: 450px;
+} */
+
+.img_cart img {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  display: inherit;
+}
+
+.cart_title {
+  width: 220px;
+  font-family: Play;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000000;
+}
+
+.price_more {
+  width: 220px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.price_general {
+  font-family: "Open Sans";
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #f53b73;
+  display: flex;
+  flex-direction: column;
+}
+
+.price_general span {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-decoration: line-through;
+  color: #b8b8b8;
+}
+
+.btn_buy {
+  width: 118px;
+  height: 41px;
+  background-color: #f53b73;
+  font-family: Play;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 20.5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
